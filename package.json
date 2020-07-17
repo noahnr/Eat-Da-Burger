@@ -1,0 +1,25 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "This application is a user interface to list the burgers they would like to devour.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahnr/Eat-Da-Burger.git"
+  },
+  "author": "Noah Soukup",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noahnr/Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/noahnr/Eat-Da-Burger#readme"
+}
