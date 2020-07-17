@@ -49,3 +49,39 @@ $(function() {
             );
         }
     );
+
+    $(".create-form").on("submit", 
+        function(event) 
+        {
+            event.preventDefault();
+
+            var newBurger = {
+                burger_name: $("#burger").val().trim()
+            };
+
+            $('#burger').val("");
+
+            if (!newBurger.burger_name.length)
+                return;
+
+            $.ajax("/api/burgers", 
+                {
+                    type: "POST",
+                    data: newBurger
+                }
+            ).then(
+                function()
+                {
+                    console.log("Created new burger");
+                    location.reload();
+                }
+            ).fail(
+                function(xhr, textStatus, errorThrown)
+                {
+                    alert("Coult not add burger!  See console log for details.")
+                    console.log(xhr, textStatus, errorThrown);
+                }
+            );
+        }
+    );
+});
