@@ -13,6 +13,7 @@ router.get("/", (req, res) => {
 });
 
 router.post("/api/burgers", (req, res) => {
+    console.log("adding new record");
     burger.create([
         "name", "devour"
     ], [

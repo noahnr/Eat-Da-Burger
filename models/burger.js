@@ -7,6 +7,8 @@ var burger = {
         });
     },
     create: (cols, vals, cb) => {
+        console.log("at burger create: cols =", cols);
+        
         orm.create("burgers", cols, vals, (res) => {
             cb(res);
         });

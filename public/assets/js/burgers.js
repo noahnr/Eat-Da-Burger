@@ -56,12 +56,13 @@ $(function() {
             event.preventDefault();
 
             var newBurger = {
-                burger_name: $("#burger").val().trim()
+                name: $("#burger").val().trim(),
+                devour: 0
             };
 
             $('#burger').val("");
 
-            if (!newBurger.burger_name.length)
+            if (!newBurger.name.length)
                 return;
 
             $.ajax("/api/burgers", 
