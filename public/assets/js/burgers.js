@@ -56,8 +56,7 @@ $(function() {
             event.preventDefault();
 
             var newBurger = {
-                name: $("#burger").val().trim(),
-                devour: 0
+                name: $("#burger").val().trim()
             };
 
             $('#burger').val("");
