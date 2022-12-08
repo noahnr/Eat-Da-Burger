@@ -4,7 +4,7 @@
   "description": "This application is a user interface to list the burgers they would like to devour.",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-handlebars": "^5.1.0",
     "mysql": "^2.18.1"
   },
